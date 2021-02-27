@@ -7,36 +7,37 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <style>.lds-dual-ring {
-      display: inline-block;
-      width: 80px;
-      height: 80px;
-    }
-    .lds-dual-ring:after {
-      content: " ";
-      display: block;
-      width: 64px;
-      height: 64px;
-      margin: 8px;
-      border-radius: 50%;
-      border: 6px solid #fcf;
-      border-color: #fcf transparent #fcf transparent;
-      animation: lds-dual-ring 1.2s linear infinite;
-    }
-    @keyframes lds-dual-ring {
-      0% {
-        transform: rotate(0deg);
+    <style>
+      .product-filter {
+        display: flex;
       }
-      100% {
-        transform: rotate(360deg);
+    
+      .product-filter h1 {
+        flex-grow: 1;
       }
+    
+      .sort {
+        display: flex;
+      }
+      .collection-sort {
+        display: flex;
+        flex-direction: column;
+      }
+    .product-grid {
+        display: grid;
+        grid: auto / repeat(4, 1fr);
+        grid-gap: 40px 20px;
+    }
+    .grid-item {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
     }
     </style>
 
     <title>Shop</title>
   </head>
   <body>
-    <div class="lds-dual-ring"></div>
 <!--heading-->
 <nav class="navbar navbar-light bg-light">
   <div class="container justify-content-center">
@@ -81,7 +82,88 @@
        </nav>
                
        
-       
+       <nav class="product-filter">
+
+        <h1>All Products</h1>
+      
+        <div class="sort">
+      
+          <div class="collection-sort">
+            <label>Filter by:</label>
+            <select>
+              <option value="/">All Jackets</option>
+            </select>
+          </div>
+      
+          <div class="collection-sort">
+            <label>Sort by:</label>
+            <select>
+              <option value="/">Featured</option>
+            </select>
+          </div>
+      
+        </div>
+      
+      </nav>
+
+    <section class="product-grid">
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img1.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img1.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+
+        <div class="grid-item">
+            <img src="img.jpg" alt="Four... "/>
+              <h2>Four Square Diamonds Men's T-shirt From</h2>
+        </div>
+   
+   </section>
        
        
        
